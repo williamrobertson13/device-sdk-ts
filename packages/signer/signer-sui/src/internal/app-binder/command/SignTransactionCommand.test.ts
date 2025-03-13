@@ -14,8 +14,6 @@ import {
 describe("SignTransactionCommand", () => {
   const defaultArgs: SignTransactionCommandArgs = {
     serializedTransaction: new Uint8Array(),
-    more: false,
-    extend: false,
   };
 
   describe("getApdu", () => {
@@ -38,8 +36,6 @@ describe("SignTransactionCommand", () => {
       // GIVEN
       const command = new SignTransactionCommand({
         serializedTransaction: new Uint8Array([0x01, 0x02, 0x03]),
-        more: false,
-        extend: false,
       });
 
       // WHEN
@@ -57,8 +53,6 @@ describe("SignTransactionCommand", () => {
       // GIVEN
       const command = new SignTransactionCommand({
         serializedTransaction: new Uint8Array([0x01, 0x02, 0x03]),
-        more: true,
-        extend: false,
       });
 
       // WHEN
@@ -76,8 +70,6 @@ describe("SignTransactionCommand", () => {
       // GIVEN
       const command = new SignTransactionCommand({
         serializedTransaction: new Uint8Array([0x01, 0x02, 0x03]),
-        more: false,
-        extend: true,
       });
 
       // WHEN
@@ -95,8 +87,6 @@ describe("SignTransactionCommand", () => {
       // GIVEN
       const command = new SignTransactionCommand({
         serializedTransaction: new Uint8Array([0x01, 0x02, 0x03]),
-        more: true,
-        extend: true,
       });
 
       // WHEN

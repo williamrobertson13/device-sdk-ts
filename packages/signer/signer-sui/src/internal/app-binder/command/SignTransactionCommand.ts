@@ -28,8 +28,6 @@ export type SignTransactionCommandArgs = {
    * Chunked serialized transaction
    */
   readonly serializedTransaction: Uint8Array;
-  readonly more: boolean;
-  readonly extend: boolean;
 };
 
 export class SignTransactionCommand
@@ -52,16 +50,12 @@ export class SignTransactionCommand
   }
 
   getApdu(): Apdu {
-    const { more, extend, serializedTransaction } = this.args;
-    let p2 = 0x00;
-    if (more) p2 |= 0x02;
-    if (extend) p2 |= 0x01;
-
+    const { serializedTransaction } = this.args;
     const signTransactionArgs: ApduBuilderArgs = {
-      cla: 0xe0,
-      ins: 0x06,
-      p1: 0x01,
-      p2,
+      cla: 0x00,
+      ins: 0x03,
+      p1: 0x00,
+      p2: 0x00,
     };
 
     return new ApduBuilder(signTransactionArgs)
