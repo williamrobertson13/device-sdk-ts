@@ -628,6 +628,9 @@ importers:
       '@ledgerhq/device-signer-kit-solana':
         specifier: workspace:*
         version: link:../../packages/signer/signer-solana
+      '@ledgerhq/device-signer-kit-sui':
+        specifier: workspace:*
+        version: link:../../packages/signer/signer-sui
       '@ledgerhq/device-transport-kit-mockserver':
         specifier: workspace:*
         version: link:../../packages/transport/mockserver

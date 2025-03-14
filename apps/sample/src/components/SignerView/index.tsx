@@ -21,6 +21,12 @@ const SUPPORTED_SIGNERS = [
     description: "Access Solana signer functionality",
     icon: <CryptoIcons.SOL size={80} />,
   },
+  {
+    title: "Sui",
+    description: "Access Sui signer functionality",
+    // FIXME
+    icon: <CryptoIcons.SUB size={80} />,
+  },
 ];
 
 export const SignerView = () => {

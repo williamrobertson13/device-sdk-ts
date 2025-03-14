@@ -6,7 +6,6 @@ import { type Container } from "inversify";
 
 import { type GetAddressDAReturnType } from "@api/app-binder/GetAddressDeviceActionTypes";
 import { type GetAppConfigurationDAReturnType } from "@api/app-binder/GetAppConfigurationDeviceActionTypes";
-import { type SignMessageDAReturnType } from "@api/app-binder/SignMessageDeviceActionTypes";
 import { type SignTransactionDAReturnType } from "@api/app-binder/SignTransactionDeviceActionTypes";
 import { type AddressOptions } from "@api/model/AddressOption";
 import { type Transaction } from "@api/model/Transaction";
@@ -16,7 +15,6 @@ import { type SignerSui } from "@api/SignerSui";
 import { type GetAddressUseCase } from "./use-cases/address/GetAddressUseCase";
 import { type GetAppConfigurationUseCase } from "./use-cases/app-configuration/GetAppConfigurationUseCase";
 import { useCasesTypes } from "./use-cases/di/useCasesTypes";
-import { type SignMessageUseCase } from "./use-cases/message/SignMessageUseCase";
 import { type SignTransactionUseCase } from "./use-cases/transaction/SignTransactionUseCase";
 import { makeContainer } from "./di";
 

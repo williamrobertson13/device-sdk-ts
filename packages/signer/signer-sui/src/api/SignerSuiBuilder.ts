@@ -29,9 +29,9 @@ export class SignerSuiBuilder {
   }
 
   /**
-   * Build the sui signer
+   * Build the Sui signer
    *
-   * @returns the sui signer
+   * @returns the Sui signer
    */
   public build() {
     return new DefaultSignerSui({
