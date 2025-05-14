@@ -45,7 +45,6 @@
   },
   "devDependencies": {
     "@ledgerhq/device-management-kit": "workspace:*",
-    "@ledgerhq/esbuild-tools": "workspace:*",
     "@ledgerhq/eslint-config-dsdk": "workspace:*",
     "@ledgerhq/prettier-config-dsdk": "workspace:*",
     "@ledgerhq/tsconfig-dsdk": "workspace:*",
