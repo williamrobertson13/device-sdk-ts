@@ -23,6 +23,7 @@
     "signer-btc": "pnpm --filter @ledgerhq/device-signer-kit-bitcoin",
     "signer-eth": "pnpm --filter @ledgerhq/device-signer-kit-ethereum",
     "signer-sol": "pnpm --filter @ledgerhq/device-signer-kit-solana",
+    "signer-sui": "pnpm --filter @ledgerhq/device-signer-kit-sui",
     "signer-utils": "pnpm --filter @ledgerhq/signer-utils",
     "mockserver-client": "pnpm --filter @ledgerhq/device-mockserver-client",
     "trusted-apps": "pnpm --filter @ledgerhq/device-sdk-trusted-apps",
